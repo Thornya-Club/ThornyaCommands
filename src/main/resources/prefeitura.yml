@@ -1,0 +1,32 @@
+######################
+#Plugin de Prefeitura#
+######################
+#Quando for usar o /prefeitura reiniciar
+#Coloque o nome dos novos candidatos antes, depois use o /prefeitura reiniciar
+#Quando for reiniciado, inicie as eleições!
+#Qualquer problema use /prefeitura reload
+
+votacao:
+  #Ativada ou Desativada
+  estado: "Desativada"
+  #max 8 candidatos
+  candidatos:
+    - "Gusttavo13"
+    - "Especttra"
+    - "Teste1"
+    - "Teste2"
+    - "Teste3"
+GUI:
+  nome: "&1&lEleições de Janeiro"
+  ITEM_CANDIDATO:
+    #Var $candidato$ mostra o nome do candidato
+    nome: "&b$candidato$"
+    lore:
+      - " "
+      - "&aClique para votar no $candidato$"
+  ITEM_INFO:
+    nome: "&eInformações da Eleição"
+    lore:
+      - " "
+      - "&6Não divulgue seu voto!"
+      - "&6Não seja comprado por ninguém!"

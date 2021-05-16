@@ -1,0 +1,27 @@
+tax-prefeitura: 0.0
+tax-supremacia: 0.0
+
+mysql:
+  username: root
+  host: localhost
+  port: 3306
+  enable: true
+  password: Thornya@$$$$
+  database: thornya
+#################Thornya#################
+message_reload: "&aConfigurações carregadas com sucesso."
+
+message_clearchat: "&a&lO Staff &c&l%player% &a&llimpou o chat!"
+##colocar em mysql a staff.
+staffs:
+  - "Gusttavo13"
+  - "Especttra"
+  - "wmsplayy"
+  - "Baiano"
+  - "Diana_5213"
+  - "RelativoBR"
+  - "KiwiComQueijo3"
+  - "Dieg"
+  - "Unicornio_Azul_"
+  - "VictorHugo_"
+

@@ -1,0 +1,53 @@
+no-tax: "&aVocê não foi taxado por ser sua loja!"
+no-have-money-buy:
+  - " "
+  - "&cVocê não tem dinheiro suficiente"
+  - "&bEssa loja tem uma taxa de &2T$tax$ &bpara cada item!"
+  - "&bVocê precisa de &2T$total$ &bpara efetuar essa compra!"
+success-buy:
+  - "&5+---------------------------------------------------+"
+  - "&5| &aVocê foi taxado em &eT$taxtotal$ &anessa loja!"
+  - "&5| &aVocê comprou &e$quantia$ $item$ &apor &eT$total$"
+  - "&5+---------------------------------------------------+"
+economy:
+  player-not-online: "&cEsse jogador não está online!"
+  player-not-found: "&cEsse jogador não existe!"
+  invalid-number: "&cDigite um número válido!"
+  pay-yourself: "&cVocê não pode pagar você mesmo!"
+  received-money: "&aVocê recebeu &2$money &ado jogador &2$player"
+  paid-money:
+    - "&aVocê foi taxado em &2$taxa &ana sua transferência!"
+    - "&aVocê pagou &2$money &apara o jogador &2$player"
+  dont-have-money:
+    - "&cVocê não tem dinheiro suficiente!"
+    - " "
+    - "&cA taxa da transferência é &2$taxa"
+    - "&cValor total: &2$total"
+tax:
+  show-tax:
+    - "&5+---------------------------------------------------+"
+    - "&5| &2Taxa do Supremacia: &4$taxS%"
+    - "&5| "
+    - "&5| &2Taxa da Prefeitura: &4$taxP%"
+    - "&5| "
+    - "&5| &2Valor total de Taxas: &4$taxtotal%"
+    - "&5+---------------------------------------------------+"
+  announce-remove-supremacia:
+    - " "
+    - "&eO $player &eremoveu as taxas do &2Supremacia"
+  announce-remove-prefeitura:
+    - " "
+    - "&eO $player &eremoveu as taxa da &2Prefeitura"
+  announce-supremacia:
+    - " "
+    - "&eO $player &emudou a taxa do &2Supremacia &epara &4$tax%"
+  announce-prefeitura:
+    - " "
+    - "&eO $player &emudou a taxa da &2Prefeitura &epara &4$tax%"
+  help:
+    - "&5+---------------------AJUDA---------------------+"
+    - "&aExemplo de Valores"
+    - "&aUse /taxa - para ver as taxas atuais"
+    - "&aUse /taxa mudar prefeitura &410 &a- equivale &410%"
+    - "&aUse /taxa mudar [prefeitura/supremacia] {valor}"
+    - "&5+---------------------AJUDA---------------------+"
