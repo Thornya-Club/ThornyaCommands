@@ -4,13 +4,10 @@ import com.earth2me.essentials.Essentials;
 import net.sacredlabyrinth.phaed.simpleclans.SimpleClans;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import thornyaplugin.thornyaplugin.commands.Thornya;
-import thornyaplugin.thornyaplugin.events.ThornyaE;
 import thornyaplugin.thornyaplugin.prefeitura.commands.Prefeitura;
 import thornyaplugin.thornyaplugin.prefeitura.commands.TabPrefeitura;
 import thornyaplugin.thornyaplugin.prefeitura.database.SQLite;
@@ -19,10 +16,8 @@ import thornyaplugin.thornyaplugin.taxas.Tax;
 import thornyaplugin.thornyaplugin.taxas.database.Mysql;
 import thornyaplugin.thornyaplugin.taxas.events.QuickShop;
 import thornyaplugin.thornyaplugin.utils.ConfigAPI;
-import thornyaplugin.thornyaplugin.utils.TimeFormatter;
-import thornyaplugin.thornyaplugin.vars.*;
+import thornyaplugin.thornyaplugin.vars.Global;
 
-import java.io.*;
 import java.util.Objects;
 
 public final class ThornyaCommands extends JavaPlugin {

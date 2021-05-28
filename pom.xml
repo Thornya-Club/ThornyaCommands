@@ -41,6 +41,21 @@
                 </includes>
             </resource>
         </resources>
+        <!--
+        <plugins>
+            <plugin>
+                 Plugin for Unit Tests
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+
+                <configuration>
+                    <junitArtifactName>org.junit.jupiter:junit-jupiter</junitArtifactName>
+                    <trimStackTrace>false</trimStackTrace>
+                </configuration>
+            </plugin>
+        </plugins>
+        -->
     </build>
 
     <repositories>
@@ -73,13 +88,22 @@
             <id>quickshop-repo</id>
             <url>https://repo.codemc.io/repository/maven-public/</url>
         </repository>
-		<repository>
-			<id>essentials-snapshots</id>
-			<url>https://repo.essentialsx.net/snapshots/</url>
-		</repository>
+        <repository>
+            <id>essentials-snapshots</id>
+            <url>https://repo.essentialsx.net/snapshots/</url>
+        </repository>
         <repository>
             <id>paper-repo</id>
             <url>https://papermc.io/repo/repository/maven-public/</url>
+        </repository>
+        <repository>
+            <id>net.essentialsx</id>
+            <name>EssentialsX</name>
+            <url>https://repo.essentialsx.net/releases/</url>
+        </repository>
+        <repository>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.org/repository/maven-public</url>
         </repository>
     </repositories>
 
@@ -99,6 +123,7 @@
             <groupId>me.mattstudios</groupId>
             <artifactId>mf-msg-bukkit</artifactId>
             <version>2.0.1</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -113,23 +138,29 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>net.sacredlabyrinth.phaed.simpleclans</groupId>
+            <groupId>com.github.marcelo-mason</groupId>
             <artifactId>SimpleClans</artifactId>
-            <version>2.14.5</version> <!-- You can find the latest version at the bottom -->
+            <version>2.10.2</version>
+            <!-- https://github.com/RoinujNosde/SimpleClans -->
+        </dependency>
+        <dependency>
+            <groupId>net.essentialsx</groupId>
+            <artifactId>EssentialsX</artifactId>
+            <version>2.19.0-SNAPSHOT</version>
+            <!-- https://github.com/EssentialsX/Essentials -->
             <scope>provided</scope>
         </dependency>
-		<dependency>
-			<groupId>net.essentialsx</groupId>
-			<artifactId>EssentialsX</artifactId>
-			<version>2.19.0-SNAPSHOT</version>
-			<scope>provided</scope>
-		</dependency>
+        <dependency>
+            <groupId>com.github.seeseemelk</groupId>
+            <artifactId>MockBukkit-v1.16</artifactId>
+            <version>1.0.0</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>ThornyaAPI</groupId>
             <artifactId>ThornyaAPI</artifactId>
-            <scope>system</scope>
-            <version>1.0</version>
-            <systemPath>C:/Users/Gusttavo13/IdeaProjects/ThornyaAPI/target/ThornyaAPI - DEV 1 (v1.0.0).jar</systemPath>
+            <version>1.0.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
